@@ -1,0 +1,5 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"nhìn rõ hình dạng chiếc cốc (cup) trên kênh IR-sim trong khi trên ảnh RGB bị tối không thấy",object.type,"trên S01_ir vẽ box object (type=cup); trên S01_rgb không thấy nên không vẽ box (không suy từ IR sang RGB)"
+S02_ir,IR_sim,"nhìn rõ ghế trẻ em (child_seat) và lòng ghế trống trên IR-sim trong khi ảnh RGB tối không thấy rõ bên trong",child_seat.occupied,"trên S02_ir gán occupied=no; trên S02_rgb không thấy rõ bên trong nên giữ occupied=unknown"
+S05_ir,IR_sim,"nhìn rõ ghế trẻ em (child_seat) và lòng ghế trống trên IR-sim trong khi ảnh RGB chìm trong vùng tối không thấy rõ",child_seat.occupied,"trên S05_ir gán occupied=no; trên S05_rgb không thấy rõ bên trong nên giữ occupied=unknown"
+D03,real_IR,"đốm phản xạ LED trên tròng kính che mắt phải",eye_right,"ghi unknown, không ghi closed"
